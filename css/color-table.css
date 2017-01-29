@@ -1,0 +1,65 @@
+body {
+  background: #222222;
+  margin: 0 0;
+  color: white;
+  font-family: "Avenir", "Helvetica Nueue", "Segoe UI",
+               "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+               "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+#root {
+  width: 400px;
+  margin: 40px auto;
+}
+
+.color-table {
+
+}
+.color-table > table {
+  border-spacing: 5px;
+}
+.color-table > table th,
+.color-table > table td {
+  padding: 5px 7px;
+  /*border: 2px solid #222222;*/
+}
+.color-table > table td.color-table-actions {
+  width: 16px;
+  padding: 5px 4px;
+}
+
+.color-table-drop-before > td {
+  border-top: 2px solid rgba(255,255,255,0.7);
+}
+.color-table-dragging {
+  opacity: 0.7;
+}
+
+.color-table-grip {
+  position: relative;
+  border-top: 2px solid #777;
+  display: block;
+  width: 10px;
+  height: 3px;
+  margin: 0 auto;
+  top: 2px;
+  cursor: move;
+}
+.color-table-grip:before {
+  border-top: 2px solid #777;
+  position: absolute;
+  top: -5px;
+  display: block;
+  width: 10px;
+  content: '';
+}
+.color-table-grip:after {
+  border-top: 2px solid #777;
+  width: 10px;
+  display: block;
+
+  position: absolute;
+  top: 1px;
+  content: '';
+}
