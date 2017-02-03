@@ -17,7 +17,11 @@ body {
 
 }
 .color-table > table {
+  transform: translate3d(0,0,0);
   border-spacing: 5px;
+}
+.color-table > table tr {
+  transition: transform 1s;
 }
 .color-table > table th,
 .color-table > table td {
@@ -31,6 +35,9 @@ body {
 
 .color-table-drop-before > td {
   border-top: 2px solid rgba(255,255,255,0.7);
+}
+.color-table-drop-after > td {
+  border-bottom: 2px solid rgba(255,255,255,0.7);
 }
 .color-table-dragging {
   opacity: 0.7;
@@ -62,4 +69,7 @@ body {
   position: absolute;
   top: 1px;
   content: '';
+}
+.color-table-center {
+  text-align: center;
 }
